@@ -526,11 +526,8 @@ body {
   margin-bottom: 30px;
 }
 
-.projects__list-card-border {
-  padding: 20px 24px;
-  border-width: 0 1px 1px;
-  border-style: solid;
-  border-color: var(--border-projects-color);
+.projects__list-link {
+  display: block;
 }
 
 .projects__list-title {
@@ -548,4 +545,11 @@ body {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--color-projects-list-text);
+}
+
+.list-card--border {
+  padding: 20px 24px;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: var(--border-projects-color);
 }
