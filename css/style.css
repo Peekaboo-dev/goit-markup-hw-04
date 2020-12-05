@@ -123,6 +123,9 @@ h6 {
   --bc-hero-button: #2196f3;
   --border-header-color: #ececec;
   --border-projects-color: #eeeeee;
+  --soft-skill-bg-icon-box: #f5f4fa;
+  --bc-team-social-link: #2196f3;
+  --fill-team-social-link: #afb1b8;
 }
 
 /*===Main Style===*/
@@ -257,8 +260,8 @@ body {
 .header__contact-icon {
   margin-right: 10px;
   fill: var(--contacts-header-color);
-  -webkit-transition: color 0.1s linear;
-  transition: color 0.1s linear;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 .header--border {
@@ -348,6 +351,18 @@ body {
   width: calc((100%-90px) / 4);
 }
 
+.soft-skill__list-icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background-color: var(--soft-skill-bg-icon-box);
+}
+
 .soft-skill__list-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -413,7 +428,6 @@ body {
 }
 
 .team__list-item {
-  padding-bottom: 30px;
   background: var(--bc-team-list-item);
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -434,11 +448,63 @@ body {
 }
 
 .team__list-text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-team-list-text);
+}
+
+.team__list-social {
+  padding: 0 32px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__list-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.team__list-social-link:hover {
+  border-radius: 50%;
+  background-color: var(--bc-team-social-link);
+}
+
+.team__list-social-link:focus {
+  border-radius: 50%;
+  background-color: var(--bc-team-social-link);
+}
+
+.team__list-social-link:hover > svg {
+  fill: #fff;
+}
+
+.team__list-social-link:focus > svg {
+  fill: #fff;
+}
+
+.team__list-social-icon {
+  fill: var(--fill-team-social-link);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 /*===Footer Style===*/
