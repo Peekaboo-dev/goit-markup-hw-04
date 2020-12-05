@@ -421,13 +421,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.team__list :not(:last-of-type) {
-  margin-right: 30px;
+  margin-right: -30px;
 }
 
 .team__list-item {
+  margin-right: 30px;
   background: var(--bc-team-list-item);
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -614,8 +612,8 @@ body {
 }
 
 .projects__list-item {
-  -ms-flex-preferred-size: calc(100% / 3 -30px);
-      flex-basis: calc(100% / 3 -30px);
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
