@@ -212,8 +212,8 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: inherit;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header__nav-link:hover {
@@ -247,8 +247,8 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--contacts-header-color);
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .header__contact-link:hover {
@@ -327,7 +327,7 @@ body {
 
 .hero__btn:active {
   position: relative;
-  top: 1px;
+  top: 2px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -477,19 +477,18 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  background-color: transparent;
   color: var(--bg-team-social-link);
 }
 
 .team__list-social-link:hover {
-  border-radius: 50%;
   background-color: var(--bc-team-social-link);
   color: var(--color-team-social-link);
 }
 
 .team__list-social-link:focus {
-  border-radius: 50%;
   background-color: var(--bc-team-social-link);
   color: var(--color-team-social-link);
 }
@@ -535,8 +534,8 @@ body {
   height: 90px;
   border: 1px solid var(--border-clients-link);
   border-radius: 4px;
-  -webkit-transition: 0.1s linear;
-  transition: 0.1s linear;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
   color: var(--color-clients-link);
 }
 
@@ -552,8 +551,6 @@ body {
 
 .clients__list-icon {
   fill: currentColor;
-  -webkit-transition: 0.1s linear;
-  transition: 0.1s linear;
 }
 
 /*===Footer Style===*/
@@ -641,8 +638,8 @@ body {
   background-color: var(--bc-footer-social-list-link);
   color: var(--color-footer-social-link);
   border-radius: 50%;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .footer__social-list-link:hover {
@@ -685,22 +682,22 @@ body {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  background: var(--bc-search-menu-button);
+  background-color: var(--bc-search-menu-button);
   border-radius: 4px;
-  -webkit-transition: 0.1s linear;
-  transition: 0.1s linear;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .search-menu__btn:hover {
   color: var(--fc-search-menu-button-accent);
-  background: var(--bc-search-menu-button-accent);
+  background-color: var(--bc-search-menu-button-accent);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .search-menu__btn:focus {
   color: var(--fc-search-menu-button-accent);
-  background: var(--bc-search-menu-button-accent);
+  background-color: var(--bc-search-menu-button-accent);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -709,7 +706,7 @@ body {
   position: relative;
   top: 1px;
   color: var(--fc-search-menu-button-accent);
-  background: var(--bc-search-menu-button-accent);
+  background-color: var(--bc-search-menu-button-accent);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -738,8 +735,10 @@ body {
 
 .projects__list-link {
   display: block;
-  -webkit-transition: 0.1s linear;
-  transition: 0.1s linear;
+  -webkit-transition: -webkit-box-shadow 200ms linear;
+  transition: -webkit-box-shadow 200ms linear;
+  transition: box-shadow 200ms linear;
+  transition: box-shadow 200ms linear, -webkit-box-shadow 200ms linear;
 }
 
 .projects__list-link:hover {
